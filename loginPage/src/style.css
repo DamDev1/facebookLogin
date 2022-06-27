@@ -1,0 +1,235 @@
+:root {
+  --primaryColor: #1877f2;
+  --font-family: Poppins, sans-serif;
+  --secondaryColor: #42B72A;
+  --bodyColor: rgba(238, 238, 238, 0.732);
+  --shadow: 0 1px 3px rgba(92, 92, 92, 0.822);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--bodyColor);
+  font-family: var(--font-family);
+}
+
+@media (max-width: 786px) {
+  #loginFace {
+    padding: 2rem;
+  }
+  #loginFace #showcase h1 {
+    text-align: center;
+    font-size: 3.3rem;
+    color: var(--primaryColor);
+  }
+  #loginFace #showcase p {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #loginFace #form {
+    width: 22.5rem;
+    padding: 1rem;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+  #loginFace #form label {
+    display: block;
+  }
+  #loginFace #form label input {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 221, 221);
+    font-size: 18px;
+    outline: none;
+  }
+  #loginFace #form label ::-moz-placeholder {
+    opacity: 0.75;
+  }
+  #loginFace #form label :-ms-input-placeholder {
+    opacity: 0.75;
+  }
+  #loginFace #form label ::placeholder {
+    opacity: 0.75;
+  }
+  #loginFace #form .password {
+    margin-top: 1rem;
+  }
+  #loginFace #form .submit {
+    margin-top: 1rem;
+  }
+  #loginFace #form .submit input {
+    width: 100%;
+    background: var(--primaryColor);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #loginFace #form .forgot {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 13px;
+  }
+  #loginFace #form .forgot a {
+    color: var(--primaryColor);
+    text-decoration: none;
+  }
+  #loginFace #form hr {
+    margin-top: 1.5rem;
+    border-radius: 1px;
+    border: 0.01px solid rgba(213, 211, 211, 0.7);
+  }
+  #loginFace #form .createAcc {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  #loginFace #form .createAcc button {
+    padding: 1.2rem 2rem;
+    background: var(--secondaryColor);
+    border: 0;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  #loginFace .signUp_pop {
+    background: white;
+    position: absolute;
+    border-radius: 5px;
+    width: 28rem;
+    top: 20rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #loginFace .signUp_pop .head {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  #loginFace .signUp_pop .head .text h2 {
+    font-size: 30px;
+  }
+  #loginFace .signUp_pop .head .text p {
+    font-size: 14px;
+    color: rgb(175, 172, 172);
+  }
+  #loginFace .signUp_pop .head .close h3 {
+    font-size: 28px;
+  }
+  #loginFace .signUp_pop hr {
+    border-radius: 1px;
+    border: 0.2px solid rgba(207, 207, 207, 0.865);
+  }
+  #loginFace .signUp_pop form {
+    padding: 1rem;
+  }
+  #loginFace .signUp_pop form .name input {
+    padding: 0.8rem 1rem;
+    display: inline;
+    background: var(--bodyColor);
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  #loginFace .signUp_pop form .contact_password {
+    margin-top: 0.8rem;
+  }
+  #loginFace .signUp_pop form .contact_password input {
+    display: block;
+    padding: 0.8rem;
+    width: 95%;
+    background: var(--bodyColor);
+    margin-top: 0.5rem;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  #loginFace .signUp_pop form .contact_password .pass input {
+    margin-top: 0.8rem;
+  }
+  #loginFace .signUp_pop form .date {
+    margin-top: 1rem;
+  }
+  #loginFace .signUp_pop form .date p {
+    font-size: 12px;
+  }
+  #loginFace .signUp_pop form .date input {
+    margin-top: 0.3rem;
+    width: 20%;
+    padding: 0.5rem;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 5px;
+    font-size: 14px;
+    background: var(--bodyColor);
+  }
+  #loginFace .signUp_pop form .gender {
+    margin-top: 1rem;
+  }
+  #loginFace .signUp_pop form .gender p {
+    font-size: 12px;
+  }
+  #loginFace .signUp_pop form .gender input[type=radio] {
+    display: none;
+  }
+  #loginFace .signUp_pop form .gender .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    border: 2px solid var(--primaryColor);
+    box-shadow: var(--primaryColor);
+    flex-direction: column;
+  }
+  #loginFace .signUp_pop form .gender .bubble::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background-color: var(--primaryColor);
+    box-shadow: var(--primaryColor);
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+  }
+  #loginFace .signUp_pop form .gender input:checked ~ .bubble::after {
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+  }
+  #loginFace .signUp_pop form .note {
+    margin-top: 1rem;
+  }
+  #loginFace .signUp_pop form .note p {
+    font-size: 12px;
+  }
+  #loginFace .signUp_pop form .note p:nth-child(2) {
+    margin-top: 0.5rem;
+  }
+  #loginFace .signUp_pop form .signUP {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  #loginFace .signUp_pop form .signUP button {
+    padding: 0.8rem 2rem;
+    font-size: 18px;
+    background: #42B72A;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
