@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 6rem;
-    padding: 1rem;
+    padding-right: 3rem;
 
     .left{
         width: 40%;
@@ -57,6 +57,7 @@ body{
                     border: 2px solid rgb(222, 222, 222);
                     border-radius: 8px;
                     font-size: 15px;
+                    outline-color: #1877f2;
                 }
             }
 
@@ -97,6 +98,7 @@ body{
             label:nth-child(6){
                 margin-top: 1.5rem;
                 text-align: center;
+                
                 button{
                     padding: 1rem;
                     font-size: 18px;
@@ -286,3 +288,106 @@ body{
         transition: 1s ease-in-out;
     }
 }
+
+.smallScreen{
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .wideScreen{
+        display: none;
+    }
+
+    .smallScreen{
+        display: block;
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+        .container{
+            text-align: center;
+            padding: 20px;
+
+            h1{
+                color: #1877f2;
+            }
+
+            form{
+                margin: 1rem;
+
+                label{
+                    display: block;
+                    
+                    input{
+                        padding: 0.8rem;
+                        width: 100%;
+                        background: white;
+                        margin-top: 0.5rem;
+                        border: 1px solid rgb(213, 213, 213);
+                        border-radius: 5px;
+                        font-size: 14px;
+                        outline-color: #1877f2;
+                    }
+                }
+
+                label:nth-child(3){
+                    margin-top: 1rem;
+                    text-align: center;
+                    width: 100%;
+                    button{
+                        padding: 1rem;
+                        border: 0;
+                        background: #1877f2;
+                        color: white;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        width: 105%;
+                    }
+                }
+
+                .forgot{
+                    margin-top: 1rem;
+                    
+                    a{
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+                }
+
+                .line{
+                    text-align: center;
+
+                    hr{
+                        margin-top: 1rem;
+                        border-color: rgba(230, 229, 229, 0.471);
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    hr:nth-child(3){
+                        display: none;
+                    }
+
+                    span{
+                        margin-top: 2rem;
+                        color: rgba(149, 149, 150, 0.793);
+                    }
+                    
+                }
+
+                .create{
+
+                    margin-top: 1rem;
+                    button{
+                        padding: 1rem;
+                        border-radius: 5px;
+                        color: white;
+                        border: 0;
+                        background: #42B72A;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}   

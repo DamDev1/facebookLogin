@@ -22,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 6rem;
-  padding: 1rem;
+  padding-right: 3rem;
 }
 .wideScreen .left {
   width: 40%;
@@ -52,6 +52,7 @@ body {
   border: 2px solid rgb(222, 222, 222);
   border-radius: 8px;
   font-size: 15px;
+  outline-color: #1877f2;
 }
 .wideScreen .right form label:nth-child(2) {
   margin-top: 0.5rem;
@@ -237,4 +238,92 @@ body {
 .wideScreen .active {
   display: block;
   transition: 1s ease-in-out;
+}
+
+.smallScreen {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .wideScreen {
+    display: none;
+  }
+
+  .smallScreen {
+    display: block;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .smallScreen .container {
+    text-align: center;
+    padding: 20px;
+  }
+  .smallScreen .container h1 {
+    color: #1877f2;
+  }
+  .smallScreen .container form {
+    margin: 1rem;
+  }
+  .smallScreen .container form label {
+    display: block;
+  }
+  .smallScreen .container form label input {
+    padding: 0.8rem;
+    width: 100%;
+    background: white;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 5px;
+    font-size: 14px;
+    outline-color: #1877f2;
+  }
+  .smallScreen .container form label:nth-child(3) {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .smallScreen .container form label:nth-child(3) button {
+    padding: 1rem;
+    border: 0;
+    background: #1877f2;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 105%;
+  }
+  .smallScreen .container form .forgot {
+    margin-top: 1rem;
+  }
+  .smallScreen .container form .forgot a {
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .smallScreen .container form .line {
+    text-align: center;
+  }
+  .smallScreen .container form .line hr {
+    margin-top: 1rem;
+    border-color: rgba(230, 229, 229, 0.471);
+    width: 100%;
+    text-align: center;
+  }
+  .smallScreen .container form .line hr:nth-child(3) {
+    display: none;
+  }
+  .smallScreen .container form .line span {
+    margin-top: 2rem;
+    color: rgba(149, 149, 150, 0.793);
+  }
+  .smallScreen .container form .create {
+    margin-top: 1rem;
+  }
+  .smallScreen .container form .create button {
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+    background: #42B72A;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
